@@ -33,12 +33,32 @@ let arr = ["cat", "puppy", "bird", "squirrel"]
 
 function sortString(array){
 
-for (i=0, i < arr.length, i++){
+for (i=0; i < arr.length; i++){
   let list = []
   let string = {}
   let str = arr[i].length
   list << str
-  let sortedList = list.sort((a, ) => a - b))
+  let sortedList = list.sort((a,b) => a - b)
+}
+return sortedList
 }
 
+function isAnagram(string1, string2){
+
+  // if the number of letter is not the same they are automatically not anagrams
+  if (string1.length === string2.length){
+    // transform both strings toLowerCase and then arrays
+    let arr1 = string1.toLowerCase().split("")
+    let arr2 = string2.toLowerCase().split("")
+
+    // check if all the elements inside arr1 are present on arr2
+    return arr1.every(char => arr2.includes(char))
+
+
+
+  } else { 
+    return false
+  }
 }
+
+
