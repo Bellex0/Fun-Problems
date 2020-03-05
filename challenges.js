@@ -27,4 +27,18 @@ function isPalindrome(string){
     }
   }
   
-  isAnagram("car", "rac")
+// Write a function that given a list of strings, returns the list sorted based on the length of each string.
+
+let arr = ["cat", "puppy", "bird", "squirrel"]
+
+function sortString(array){
+
+for (i=0, i < arr.length, i++){
+  let list = []
+  let string = {}
+  let str = arr[i].length
+  list << str
+  let sortedList = list.sort((a, ) => a - b))
+}
+
+}
